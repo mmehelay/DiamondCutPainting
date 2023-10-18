@@ -116,7 +116,7 @@
                 .cs-bubble {
                     &:before,
                     &:after {
-                        background-color: #449ffc;
+                        background-color: (--primary);
                     }
                 }
 
@@ -158,7 +158,7 @@
                 width: calc(27 / 16 * 1rem);
                 height: calc(27 / 16 * 1rem);
                 border-radius: 50%;
-                background: #e5f2ff;
+                background: #f9e4be;
                 opacity: 1;
                 position: absolute;
                 display: block;
@@ -177,7 +177,7 @@
                 width: calc(27 / 16 * 1rem);
                 height: calc(27 / 16 * 1rem);
                 border-radius: 50%;
-                background: #e5f2ff;
+                background: #f9e4be;
                 opacity: 1;
                 position: absolute;
                 display: block;
@@ -205,7 +205,7 @@
                 width: calc(63 / 16 * 1rem);
                 height: calc(63 / 16 * 1rem);
                 border-radius: 50%;
-                background: #e5f2ff;
+                background: #f9e4be;
                 opacity: 1;
                 position: absolute;
                 display: block;
@@ -225,7 +225,7 @@
                 width: calc(50 / 16 * 1rem);
                 height: calc(50 / 16 * 1rem);
                 border-radius: 50%;
-                background: #e5f2ff;
+                background: #f9e4be;
                 opacity: 1;
                 position: absolute;
                 display: block;
@@ -632,7 +632,7 @@
     body.dark-mode {
         #sbsr-298 {
             .cs-topper {
-                color: var(--secondaryLight);
+                color: var(--primaryLight);
             }
 
             .cs-title,
@@ -641,7 +641,7 @@
             }
 
             .cs-link {
-                color: var(--secondaryLight);
+                color: var(--primaryLight);
             }
 
             .cs-text {
@@ -649,8 +649,8 @@
             }
 
             .cs-button-solid {
-                background-color: var(--secondaryLight);
-                color: #1a1a1a;
+                background-color: var(--primary);
+                color: var(--bodyTextColorWhite);
             }
         }
     }
@@ -744,7 +744,7 @@
 @media only screen and (min-width: 0rem) {
     #reviews-592 {
         padding: var(--sectionPadding);
-        background-color: var(--primary);
+        background-color: var(--secondary);
 
         .cs-container {
             width: 100%;
@@ -905,227 +905,10 @@
             .cs-item-text {
                 opacity: 0.8;
             }
-        }
-    }
-}
-
-/*-- -------------------------- -->
-<---            FAQ             -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #faq-351 {
-        padding: var(--sectionPadding);
-        background: #f7f7f7;
-
-        .cs-container {
-            width: 100%;
-            /* changes to 1280px at desktop */
-            max-width: calc(550 / 16 * 1rem);
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            /* 48px - 64px */
-            row-gap: clamp(3rem, 6vw, 4rem);
-        }
-
-        .cs-content {
-            /* set text align to left if content needs to be left aligned */
-            text-align: center;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            /* centers content horizontally, set to flex-start to left align */
-            align-items: center;
-        }
-
-        .cs-title {
-            margin: 0;
-        }
-
-        .cs-faq-group {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .cs-faq-item {
-            list-style: none;
-            width: 100%;
-            border-bottom: 1px solid #e8e8e8;
-            transition: border-bottom 0.3s;
-
-            &.active {
-                border-color: var(--primaryLight);
-                .cs-button {
-                    color: var(--primaryLight);
-                    &:before {
-                        background-color: var(--primaryLight);
-                        transform: rotate(315deg);
-                    }
-                    &:after {
-                        background-color: var(--primaryLight);
-                        transform: rotate(-315deg);
-                    }
-                }
-                .cs-item-p {
-                    height: auto;
-                    /* 20px - 24px bottom */
-                    /* 16px - 24px left & right */
-                    padding: 0 clamp(1rem, 2vw, 1.5rem)
-                        clamp(1.25rem, 1.3vw, 1.5rem);
-                    opacity: 1;
-                }
-            }
-        }
-
-        .cs-button {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: 1.2em;
-            text-align: left;
-            font-weight: bold;
-            /* 16px - 20px */
-            padding: clamp(1rem, 1.3vw, 1.25rem);
-            border: none;
-            background: transparent;
-            color: var(--headerColor);
-            display: block;
-            width: 100%;
-            position: relative;
-            transition:
-                background-color 0.3s,
-                color 0.3s;
-
-            &:hover {
-                cursor: pointer;
-            }
-
-            &:before {
-                /* left line */
-                content: "";
-                width: calc(8 / 16 * 1rem);
-                height: calc(2 / 16 * 1rem);
-                background-color: var(--headerColor);
-                opacity: 1;
-                border-radius: 50%;
-                position: absolute;
-                display: block;
-                top: 45%;
-                right: calc(24 / 16 * 1rem);
-                transform: rotate(45deg);
-                /* animate the transform from the left side of the x axis, and the center of the y */
-                transform-origin: left center;
-                transition: transform 0.5s;
-            }
-
-            &:after {
-                /* right line */
-                content: "";
-                width: calc(8 / 16 * 1rem);
-                height: calc(2 / 16 * 1rem);
-                background-color: var(--headerColor);
-                opacity: 1;
-                border-radius: 50%;
-                position: absolute;
-                display: block;
-                top: 45%;
-                right: calc(21 / 16 * 1rem);
-                transform: rotate(-45deg);
-                /* animate the transform from the right side of the x axis, and the center of the y */
-                transform-origin: right center;
-                transition: transform 0.5s;
-            }
-        }
-
-        .cs-button-text {
-            width: 80%;
-            display: block;
-        }
-
-        .cs-item-p {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
-            line-height: 1.5em;
-            width: 90%;
-            height: 0;
-            margin: 0;
-            /* 16px - 24px */
-            padding: 0 clamp(1rem, 2vw, 1.5rem);
-            opacity: 0;
-            color: var(--bodyTextColor);
-            /* clips the text so it doesn't show up */
-            overflow: hidden;
-            transition:
-                opacity 0.3s,
-                padding-bottom 0.3s;
-        }
-    }
-}
-
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #faq-351 {
-        .cs-container {
-            max-width: calc(1280 / 16 * 1rem);
-            flex-direction: row;
-            justify-content: space-between;
-            /* push everything to the top */
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-
-        .cs-content {
-            width: 100%;
-        }
-
-        .cs-faq-group {
-            width: 48%;
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #faq-351 {
-            background-color: rgba(0, 0, 0, 0.2);
-            .cs-picture {
-                border-color: var(--accent);
-            }
-            .cs-topper {
-                color: var(--primaryLight);
-            }
-
-            .cs-title,
-            .cs-item-p {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-faq-item {
-                border-color: rgba(255, 255, 255, 0.2);
-                &.active {
-                    border-color: var(--primaryLight);
-                    .cs-button {
-                        color: var(--primaryLight);
-                        &:before,
-                        &:after {
-                            background-color: var(--primaryLight);
-                        }
-                    }
-                }
-            }
-
-            .cs-button {
-                color: var(--bodyTextColorWhite);
-                &:before,
-                &:after {
-                    background-color: var(--bodyTextColorWhite);
-                }
+            .cs-topper,
+            .cs-title {
+              
+                color: var(--primary);
             }
         }
     }

@@ -8,7 +8,7 @@
 @media only screen and (min-width: 0em) {
     // Website colors
     :root {
-        --primary: #ffba19;
+        --primary: #eba426;
         --primaryLight: #ffd675;
         --secondary: #966918;
         --secondaryLight: #001f3f;
@@ -395,7 +395,7 @@
             width: 40%;
             max-width: calc(146 / 16 * 1rem);
             height: 100%;
-            background: white;
+            background: #f7f7f7;
             opacity: 1;
             position: absolute;
             display: block;
@@ -470,6 +470,30 @@
             .cs-toggle {
                 margin-top: 0;
             }
+
+            .cs-logo {
+                width: 100%;
+                max-width: calc(146 / 16 * 1rem);
+                height: 100%;
+                padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
+                /* prevents padding from affecting height and width */
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+    
+                img {
+                    width: 150%;
+                    height: 150%;
+                    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+                    object-fit: contain;
+                }
+            }
+    
         }
 
         .cs-top-bar {
@@ -1131,6 +1155,31 @@
             .cs-toggle {
                 margin-top: 0;
             }
+
+            .cs-logo {
+                width: 18.4%;
+                /* 32px - 48px */
+                max-width: calc(320 / 16 * 1rem) clamp(2rem, 3vw, 3rem);
+                height: 100%;
+                padding: calc(16 / 16 * 1rem);
+                background-color: #f7f7f7;
+                /* prevents padding from affecting height and width */
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 100;
+    
+                img {
+                    width: 150%;
+                    height: 150%;
+                    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+                    object-fit: contain;
+                }
+            }
         }
 
         .cs-toggle {
@@ -1143,7 +1192,7 @@
             max-width: calc(320 / 16 * 1rem) clamp(2rem, 3vw, 3rem);
             height: 100%;
             padding: calc(16 / 16 * 1rem);
-            background-color: var(--primary);
+            background-color: #f7f7f7;
             /* prevents padding from affecting height and width */
             box-sizing: border-box;
             display: flex;
