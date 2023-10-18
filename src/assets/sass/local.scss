@@ -733,6 +733,11 @@
                 color: var(--bodyTextColorWhite);
             }
         }
+
+        .cs-topper {
+            max-width: 20ch;
+            color: var(--primaryLight);
+        }
     }
 }
 

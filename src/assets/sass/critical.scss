@@ -13,6 +13,7 @@
         /* 60px - 150px  bottom */
         padding: clamp(7.5rem, 23.82vw, 18.75rem) calc(16 / 16 * 1rem)
             clamp(3.75rem, 14.82vw, 9.375rem);
+            padding-top:150px;
         position: relative;
         z-index: 1;
 
@@ -242,6 +243,8 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #hero-668 {
+        padding: clamp(7.5rem, 23.82vw, 18.75rem) calc(16 / 16 * 1rem)
+            clamp(3.75rem, 14.82vw, 9.375rem);
         /* clips the red box from overflowing the section */
         overflow: hidden;
 
