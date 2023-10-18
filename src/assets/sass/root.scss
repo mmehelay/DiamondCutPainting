@@ -774,6 +774,9 @@
                     opacity: .5;
                 }
             }
+            .cs-ul-wrapper{
+                background-color: #1a1a1a;
+            }
 
             .cs-logo {
                 background-color: var(--medium);
@@ -906,6 +909,7 @@
             text-align: center;
             width: 100%;
             display: block;
+            color:black;
         }
 
         .cs-dropdown {
@@ -918,6 +922,7 @@
                     visibility: visible;
                     margin: calc(12 / 16 * 1rem) 0 0 0;
                     padding: calc(12 / 16 * 1rem) 0;
+                    color:black;
                 }
 
                 .cs-drop-link {
@@ -970,6 +975,9 @@
         }
     }
 }
+
+
+
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
