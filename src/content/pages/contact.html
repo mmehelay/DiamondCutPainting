@@ -5,7 +5,7 @@ preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base2.html" %}
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
@@ -13,83 +13,71 @@ permalink: 'contact/'
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+       <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<div id="banner-559">
+    <div class="cs-container">
+        <span class="cs-int-topper">DIAMOND CUT PAINTING</span>
+        <span class="cs-int-title">CONTACT US</span>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/landing.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/landing.jpg" alt="home interior" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>   
 
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
+ <!-- ============================================ -->
+<!--                    Form                      -->
+<!-- ============================================ -->
 
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br />
-                    {{client.address.lineTwo}},
-                    <br />
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
-            </div>
+<section id="cs-contact-486">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Talk to us about your <span class="cs-color">Painting Project!</span></h2>
+            <p class="cs-text">
+               We're eager to hear about your project and explore how we can assist you in transforming your spaces. Whether it's a home painting project, staining services, or commercial painting, we're here to make your vision a reality.
+            </p>
+            <span class="cs-heading">Any problem about your booking?</span>
+            <span class="cs-heading">You can contact us on :</span>
+            <a href="tel:647-778-7058" class="cs-link">(647) 778-7058</a>
+            <a href="mailto:info@codestitch.com" class="cs-link">info@codestitch.com</a>
         </div>
-    </section>
+        <!--Form-->
+        <form id="cs-form-486" name="Contact Form" method="post">
+            <h3 class="cs-h3">Schedule Consult</h3>
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-486" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-486" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-486" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label">
+                How Did You Find Us
+                <input class="cs-input" type="text" id="find-486" name="find-us" placeholder="How did you find us?">
+            </label>
+            <label class="cs-label cs-label-message">
+                What do you need help with?
+                <select name="cars" id="cs-select-486">
+                    <option value="full renovation">Interior Painting</option>
+                    <option value="sod install">Exterior Painting</option>
+                    <option value="yard cleanup">Commercial Painting</option>
+                    <option value="landscape design">Staining</option>
+                </select>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Book a Consult</button>
+        </form>
+    </div>
+</section>
+                                
 {% endblock %}

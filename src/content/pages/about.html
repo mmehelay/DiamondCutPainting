@@ -15,62 +15,143 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+
+ <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-559">
+    <div class="cs-container">
+        <span class="cs-int-topper">DIAMOND CUT PAINTING</span>
+        <span class="cs-int-title">ABOUT US</span>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/landing.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/landing.jpg" alt="home interior" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>   
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-317">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/image10.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/image10.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/image10.jpg" alt="consult" width="520" height="680" aria-hidden="true">
         </picture>
-
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">WHO ARE WE</span>
+            <h2 class="cs-title">TORONTO'S LEADING PAINTING CONTRACTORS</h2>
+            <p class="cs-text">
+               At Diamond Cut Painting, we take immense pride in our work. We're not just another painting company; we're a team of dedicated professionals who are passionate about what we do. Our team is led by Danny, an experienced and skilled painter with a vision for transforming spaces. Danny's wife, a key part of our team, also shares his passion for creating beautiful environments. Together, they understand the artistry and skill required in painting services.
+            </p>
+            <p class="cs-text">
+                As a locally owned and operated company, we are deeply rooted in the Greater Toronto Area community. Our commitment extends beyond painting; it's about building relationships and contributing to the beauty of our neighborhood. Your vision, combined with our expertise, creates the perfect partnership to bring your dream space to life.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<section id="stats-471">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/icons8-5-star-hotel.svg" loading="lazy" decoding="async" alt="icon" width="76" height="66">
+                <span class="cs-number">5/5</span>
+                <span class="cs-desc">Rating</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/icons8-satisfaction.svg" loading="lazy" decoding="async" alt="icon" width="76" height="66">
+                <span class="cs-number">100%</span>
+                <span class="cs-desc">Satisfaction</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/icons8-task-completed.svg" loading="lazy" decoding="async" alt="icon" width="76" height="66">
+                <span class="cs-number">100 +</span>
+                <span class="cs-desc">Projects Completed</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-478">
+    <div class="cs-container">
+        <div class="cs-left-section">
+            <!--Need to have in a wrapper so it's easier to arrange their position at the bottom-->
+            <a class="cs-cta" href="">
+                <picture class="cs-arrow-wrap">
+                    <img class="cs-arrow" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/arrow.svg" loading="lazy" decoding="async" alt="arrow" width="70" height="70">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-tag">See Our Reviews</span>
+                    <span class="cs-desc">5/5 on Google</span>
+                </div>
+            </a>
+            <!--Background Image-->
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="/assets/images/image4.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/image4.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/image4.jpg" alt="grass" width="625" height="842">
+            </picture>
+        </div>
+        <!--We need to wrap these two in a wrapper so they can be positioned more accurately and easily -->
+        <div class="cs-right-section">
+            <div class="cs-content">
+                <span class="cs-topper">Painting Services</span>
+                <h2 class="cs-title">EXPERT PAINTING CONTRACTORS SERVING THE GTA </h2>
+                <p class="cs-text">
+                   Our dedication to excellence, paired with a profound understanding of the unique characteristics of the Greater Toronto Area, allows us to offer customized solutions that not only elevate the visual appeal of your property but also enrich the diverse tapestry of our beloved community.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon-wrap">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/icons8-landlord.svg" loading="lazy" decoding="async" alt="moon" width="30" height="30">
+                    </picture>
+                    <h3 class="cs-h3">Residential Painting</h3>
+                    <p class="cs-item-text">
+                        Transform your home's appearance with Diamond Cut Painting's professional residential painting services.
+                    </p>
+                    <a href="" class="cs-link">Read More</a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrap">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/icons8-commercial.svg" loading="lazy" decoding="async" alt="moon" width="30" height="30">
+                    </picture>
+                    <h3 class="cs-h3">Commercial Painting</h3>
+                    <p class="cs-item-text">
+                        Revitalize your business space with Diamond Cut Painting's efficient and high-quality commercial painting services.
+                    </p>
+                    <a href="" class="cs-link">Read More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+                                
+                                
+                                
+                                
+                                
     {% include 'components/cta.html' %}
 
 {% endblock %}
