@@ -1,0 +1,97 @@
+---
+title: 'Exterior-Painting-Gallery'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: 'Exterior-Painting-Gallery/'
+eleventyNavigation:
+    key: Exterior-Painting-Gallery
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-559">
+    <div class="cs-container">
+        <span class="cs-int-topper">Diamond Cut Painting</span>
+        <span class="cs-int-title">Exterior Painting Gallery</span>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/landing.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/landing.jpg" alt="home interior" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>   
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/image6.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/image6.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/image6.jpg" alt="new hallway" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/image12.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/image12.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/image12.jpg" alt="new home construction" loading="lazy" width="400" height="560">
+                    </picture>
+                
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+                <!-- Row 2 -->
+                <div class="cs-row cs-row-2">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/image8.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/image8.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/image8.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/image14.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/image14.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/image14.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                 
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+                <!-- Row 3 -->
+                <div class="cs-row cs-row-3">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/image11.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/image11.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/image11.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/image13.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/image13.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/image13.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                   
+
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+            </div>
+            <a href="/painting-estimate" class="cs-button-solid">Get A Estimate</a>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
